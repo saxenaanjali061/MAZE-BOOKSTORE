@@ -1,1 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene> 
 
+        <a-assets>
+            <img id="sky_image" src="sky2.png">
+            <img id="wood_sitting" src="light_wood.png">
+            <img id="wall" src="wall_texture.jpg">
+            <img id="brickwall" src="brickk.jpg">
+            <img id="walllamp" src="WallLamp.png">
+            <img id="wood" src="wood.jpg">
+            <img id="woodpannel" src="woodenpannel.png">
+            <img id="bookshelf" src="bookshelff.jpg">
+            <a-asset-item id="pillow" src="pillow.zip"></a-asset-item>
+            <a-asset-item id="mapple_tree" src="maple_tree/"></a-asset-item>
+            <img id="stone_Floor" src="stone.png">
+          </a-assets>
+          <a-entity gltf-model="#pillow" ></a-entity> <a-entity gltf-model="#mapple_tree" ></a-entity>
+          <a-sky src="#sky_image"></a-sky>
+
+          
+         
+            <!-- <a-image 
+            src="#walllamp"
+            position="0 1.5 -3"
+            width="1.024"
+            height="0.75"
+            scale="3 3 1">
+            </a-image>-->
+          
+                     <!--wood-->
+                     <a-box src="#wood_sitting" 
+                     position="-15.614 0.844 -7.602" 
+                     scale="4.439 1.742 15.348" 
+                     color="#FFFFFF"></a-box> 
+
+                     <a-box src="#wood_sitting" 
+                     position="-15.614 0.844 7.567" 
+                     scale="4.439 1.742 15.348" 
+                     color="#FFFFFF"></a-box>
+                     
+                     <a-box src="#wood_sitting" 
+                     position="-15.614 0.844 22.465" 
+                     scale="4.439 1.742 15.348" 
+                     color="#FFFFFF"></a-box> 
+
+                     <!--table-->
+                     <a-box src="#wood_sitting" 
+                     position="-8.100 5.024 -13.234" 
+                     scale="4.439 0.487 13.993"
+                     rotation="0.000 88.643 0.000"
+                     color="#FFFFFF"></a-box>
+
+                     <a-box src="#wood" 
+                     position="9.178 5.284 20.933" 
+                     scale="20.534 0.487 4.452"
+                     rotation="0.000 -89.587 0.000"
+                     color="#FFFFFF"></a-box>
+
+                     <a-box src="#wood" 
+                     position="6.967 2.717 20.933" 
+                     scale="20.534 0.487 4.452"
+                     rotation="88.964 -66.518 23.479"
+                     color="#FFFFFF"></a-box>
+
+                     <!--under table wall-->
+                     <a-box  src="#wall" 
+                     position="-9.547 2.596 -15.394" 
+                     scale="-0.878 -5.019 16.881"
+                     rotation="0.000 88.643 0.000"
+                     color="#C9C7C2"></a-box>
+
+
+                     <!--door-->
+                     <a-box position="10.916 6.997 -15.510"
+                     rotation="180.000 -89.620" 
+                     scale="0.127 14.822 10.998" 
+                     color="#A6FFFF"
+                     opacity="0.2"></a-box>
+
+                     <!--side door wall-->
+                     <a-box  src="#wall" 
+                     position="1.301 8.024 -15.394" 
+                     scale="-0.878 -5.019 15.101"
+                     rotation="90.000 89.473 -171.214"
+                     color="#C9C7C2"></a-box>
+
+                     <a-box src="#wood_sitting" 
+                     position="4.592 7.892 -15.406" 
+                     scale="0.127 1.792 15.460"
+                     rotation="88.474 27.186 -62.806"
+                     color="#FFFFFF"></a-box>
+
+                     <a-box src="#wood_sitting" 
+                     position="10.514 15.155 -15.578" 
+                     scale="0.127 11.679 1.140"
+                     rotation="88.474 27.186 -62.806"
+                     color="#FFFFFF"></a-box>
+
+                     <a-box src="#bookshelf" 
+                     position="-9.125 8.054 45.173" 
+                     scale="0.725 14.948 32.662"
+                     rotation="0 89.370 0"
+                     color="#FFFFFF"></a-box>
+
+                     <a-box src="#wood_sitting" 
+                     position="-9.074 7.618 45.451" 
+                     scale="0.725 14.948 32.662"
+                     rotation="0 89.370 0"
+                     color="#FFFFFF"></a-box>
+
+
+
+                     <!--long wall-->
+                     <a-box src="#brickwall" 
+                     position="15.857 8.054 7.333" 
+                     scale="0.725 14.948 45.575"
+                     rotation="0 179.787 0"
+                     color="#FFFFFF"></a-box>
+
+                     <a-box src="#wood_sitting" 
+                     position="15.976 8.054 36.389" 
+                     scale="0.359 14.948 17.151"
+                     rotation="0 179.787 0"
+                     color="#FFFFFF"></a-box>
+
+
+                     
+                     <!--window-->
+                     <a-box position="-17.919 8.654 7.567" 
+                     scale="0.127 13.822 15.714" 
+                     color="#A6FFFF"
+                     opacity="0.2"></a-box>
+
+                     <a-box position="-17.919 8.654 -7.906" 
+                     scale="0.127 13.822 15.546" 
+                     color="#A6FFFF"
+                     opacity="0.2"></a-box>
+
+                     <a-box position="-17.919 8.654 23.098" 
+                     scale="0.127 13.822 15.714" 
+                     color="#A6FFFF"
+                     opacity="0.2"></a-box> 
+
+                     <a-box position="-9.489 8.654 -15.525"
+                     rotation="180.000 -89.620" 
+                     scale="0.127 13.822 16.892" 
+                     color="#A6FFFF"
+                     opacity="0.2"></a-box>
+
+
+
+                     
+                    
+                     <!--<a-assets>
+                        <a-asset-item id="tree-obj" src="tree.obj"></a-asset-item>
+                        <a-asset-item id="tree-mtl" src="tree.mtl"></a-asset-item>
+                    </a-assets>
+       
+                    <a-entity  obj-model="obj: #tree-obj; mtl: #tree-mtl" position="-4.252 0.124 -3.033" scale="3.181 3.181 3.181"></a-obj-model></a-entity>
+                    <a-entity gltf-model="#tree" modify-materials  scale="1 1 1"></a-entity>-->
+
+
+
+                   
+                 <!--Floor-->
+         
+             <a-box src="#stone_Floor" 
+                 position="11.074 0 -7.602" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box> 
+            
+                 <a-box src="#stone_Floor" 
+                 position="0.578 0 -7.602" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box> 
+             
+                 <a-box src="#stone_Floor" 
+                 position="-9.780 0 -7.602" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+            
+                 <a-box src="#stone_Floor" 
+                 position="-9.780 0 7.644" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+                    
+                 <a-box src="#stone_Floor" 
+                 position="-9.780 0 7.644" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box> 
+            
+                 <a-box src="#stone_Floor" 
+                 position="0.369 0 7.644" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+            
+                 <a-box src="#stone_Floor" 
+                 position="10.834 0 7.644" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>  
+            
+                 <a-box src="#stone_Floor" 
+                 position="10.834 0 7.644" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+                 
+                 <a-box src="#stone_Floor" 
+                 position="0.369 0 22.271" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+            
+                 <a-box src="#stone_Floor" 
+                 position="-10.047 0 22.389" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>  
+            
+                 <a-box src="#stone_Floor" 
+                 position="10.834 0 22.271" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box> 
+
+                 <a-box src="#stone_Floor" 
+                 position="10.834 0 37.353" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+
+                 <a-box src="#stone_Floor" 
+                 position="-10.030 0 37.353" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+
+                 <a-box src="#stone_Floor" 
+                 position="-20.297 0 37.353" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+
+                 <a-box src="#stone_Floor" 
+                 position="0.260 0 37.353" 
+                 scale="10.532 1.122 15.348" 
+                 color="#FFFFFF"></a-box>
+
+
+                 </a-scene>
