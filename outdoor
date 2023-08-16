@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outdoor</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+<body>
 
+    <a-scene>
+       
+          <!-- Camera -->
+          <a-entity camera position="0 1.6 0" look-controls wasd-controls></a-entity>
+        
+          <!-- Sky (or background) -->
+          <a-sky color="#cce0ff"></a-sky>
+          
+          <!-- Add floor and grass here -->
+          <!-- Add this inside the <a-scene> element -->
+<a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#a0a0a0"></a-plane>
+<!-- Add this inside the <a-scene> element -->
+    <a-assets>
+        <a-asset-item id="grass" src="/grass/scene.gltf"></a-asset-item>
+      </a-assets>
+    <a-entity gltf-model="#grass" position="0 0 0" scale="0.5 0.1 0.5"></a-entity>
+<!-- trees 1-->
+<a-assets>
+    <a-asset-item id="tree1" src="/tree1/scene.gltf"></a-asset-item>
+  </a-assets>
+
+  <a-entity gltf-model="#tree1" position="-1.5 0.5 -16.0" scale="2 1.7 2.5"></a-entity>
+  <!--pathway-->
+  <a-assets>
+    <a-asset-item id="pathway" src="/pathway/scene.gltf"></a-asset-item>
+  </a-assets>
+
+  <a-entity gltf-model="#pathway" position="-1.5 0.01 -0.25" scale="1 0.2 2"></a-entity>
+  <!--tree 2-->
+  <a-assets>
+    <a-asset-item id="tree2" src="/tree2/scene.gltf"></a-asset-item>
+  </a-assets>
+
+  <a-entity gltf-model="#tree2" position="-8 0.5 -22" scale="6.5 6.5 13"></a-entity>
+  <!--swing 1-->
+  <a-assets>
+    <a-asset-item id="swing1" src="/swing1/scene.gltf"></a-asset-item>
+  </a-assets>
+
+  <a-entity gltf-model="#swing1" position="1 0.7 -15" scale="0.01 0.01 0.01"></a-entity>
+  <!--shelf1-->
+  <a-assets>
+    <a-asset-item id="shelf1" src="/shelf1/scene.gltf"></a-asset-item>
+  </a-assets>
+
+  <a-entity gltf-model="#shelf1" position="-4 0.9 -18" scale="1.5 1.5 0.5"></a-entity>
+      </a-scene>
+</body>
+</html>
