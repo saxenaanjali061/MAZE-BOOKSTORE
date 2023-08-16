@@ -1,1 +1,85 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <!-- Sky background -->
+    <a-sky color="#ECECEC"></a-sky>
+    <a-assets>
+      <img id="leftwall" src="wall1.jpg">
+      </a-assets>
+
+    <!-- Floor -->
+    <a-plane color="#EAEAEA" rotation="-90 0 0" width="20" height="20"></a-plane>
+
+    <!-- Walls -->
+  
+    <a-box color="#DDD" depth="0.1" height="4" width="10" position="0 2 -5"></a-box>
+    <a-box color="#DDD" depth="0.1" height="4" width="10" position="0 2 5"></a-box>
+    <a-box color="#DDD" depth="0.1" height="4" width="10" rotation="0 90 0" position="5 2 0" material src=" "></a-box>
+    <a-box color="#DDD" depth="0.1" height="4" width="10" rotation="0 90 0" position="-5 2 0"></a-box>
+<!--Floor-->
+         
+<a-box src id="l2.jpg" 
+position="11.074 0 -7.602" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box> 
+
+<a-box src="#stone_Floor" 
+position="0.578 0 -7.602" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box> 
+
+<a-box src="#stone_Floor" 
+position="-9.780 0 -7.602" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box>
+
+<a-box src="#stone_Floor" 
+position="-9.780 0 7.644" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box>
+   
+<a-box src="#stone_Floor" 
+position="-9.780 0 7.644" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box> 
+
+<a-box src="#stone_Floor" 
+position="0.369 0 7.644" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box>
+
+<a-box src="#stone_Floor" 
+position="10.834 0 7.644" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box>  
+
+<a-box src="#stone_Floor" 
+position="10.834 0 7.644" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box>
+
+<a-box src="#stone_Floor" 
+position="0.369 0 22.271" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box>
+
+<a-box src="#stone_Floor" 
+position="-10.047 0 22.389" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box>  
+
+<a-box src="#stone_Floor" 
+position="10.834 0 22.271" 
+scale="10.532 1.122 15.348" 
+color="#FFFFFF"></a-box> 
+</a-scene>
+   
+   
+  </a-scene>
+</body>
+</html>
